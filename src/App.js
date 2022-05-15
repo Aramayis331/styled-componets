@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import Routers from './routers/Routers';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <Routers />
+    </AppWrapper>
   );
 }
 
 export default App;
+
+const AppWrapper = styled.div`
+  max-width: 1440px;
+  max-height: 1024px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 70px;
+`
